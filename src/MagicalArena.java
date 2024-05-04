@@ -7,6 +7,16 @@ public class MagicalArena {
         this.playerB = playerB;
     }
 
+    public void startGame() {
+        System.out.println("Welcome to the Magical Arena!");
+        System.out.println("Get ready for an epic battle between two mighty warriors!");
+        System.out.println(playerA);
+        System.out.println(playerB);
+        System.out.println("Let the battle begin!\n");
+
+        fight();
+    }
+
     public void fight() {
         Player attacker = playerA.getHealth() < playerB.getHealth() ? playerA : playerB;
         Player defender = attacker == playerA ? playerB : playerA;
@@ -23,10 +33,12 @@ public class MagicalArena {
 
             System.out.println(attacker + " attacks and rolls die: " + attackRoll);
             System.out.println(defender + " defends and rolls die: " + defenseRoll);
-            System.out.println("Attack damage: " + attackDamage);
-            System.out.println("Defense strength: " + defenseStrength);
-            System.out.println(defender + " health reduced by " + damage + " to " + defender.getHealth());
+            System.out.print("Attack damage: " + attackDamage + ", Defense strength: " + defenseStrength);
+            defender.setHealth(defender.getHealth() - damage);
+            System.out.println(", health reduced by " + damage + " to " + defender.getHealth());
+            System.out.println("Updated defender's health " + defender);
             System.out.println();
+
 
             // Switch roles for the next turn
             Player temp = attacker;
@@ -35,17 +47,17 @@ public class MagicalArena {
         }
 
         if (playerA.getHealth() <= 0) {
-            System.out.println("Player B wins!");
+            System.out.println("Player " + playerB.getName() + " wins!");
         } else {
-            System.out.println("Player A wins!");
+            System.out.println("Player " + playerA.getName() + " wins!");
         }
     }
 
     public static void main(String[] args) {
-        Player playerA = new Player(50, 5, 10);
-        Player playerB = new Player(100, 10, 5);
+        Player playerA = new Player("A", 50, 5, 10);
+        Player playerB = new Player("B", 100, 10, 5);
 
         MagicalArena arena = new MagicalArena(playerA, playerB);
-        arena.fight();
+        arena.startGame();
     }
 }

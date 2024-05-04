@@ -1,11 +1,13 @@
 import java.util.Random;
 
 public class Player {
+    private String name;
     private int health;
     private int strength;
     private int attack;
 
-    public Player(int health, int strength, int attack) {
+    public Player(String name, int health, int strength, int attack) {
+        this.name = name;
         this.health = health;
         this.strength = strength;
         this.attack = attack;
@@ -27,6 +29,14 @@ public class Player {
         return attack;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(int health) {
+        this.name = name;
+    }
+
     public int rollDie() {
         Random random = new Random();
         return random.nextInt(6) + 1;
@@ -34,6 +44,6 @@ public class Player {
 
     @Override
     public String toString() {
-        return "Player - Health: " + health + ", Strength: " + strength + ", Attack: " + attack;
+        return "Player " + name + " - Health: " + health + ", Strength: " + strength + ", Attack: " + attack;
     }
 }
