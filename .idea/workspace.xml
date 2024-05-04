@@ -1,14 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="35b6304f-5e26-4798-a4cf-734162daa4fb" name="Changes" comment="" />
+    <list default="true" id="35b6304f-5e26-4798-a4cf-734162daa4fb" name="Changes" comment="Unit tests">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MagicalArena.iml" beforeDir="false" afterPath="$PROJECT_DIR$/MagicalArena.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MagicalArena.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MagicalArena.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MagicalArenaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MagicalArenaTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
   "customColor": "",
@@ -22,13 +40,17 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "onboarding.tips.debug.path": "C:/Users/A.Guru sai nikhil/OneDrive/Desktop/MagicalArena/src/Main.java"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.MagicalArenaTest">
     <configuration name="MagicalArena" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MagicalArena" />
       <module name="MagicalArena" />
@@ -36,9 +58,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MagicalArenaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MagicalArena" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MagicalArenaTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MagicalArenaTest.testDamageCalculation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MagicalArena" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MagicalArenaTest" />
+      <option name="METHOD_NAME" value="testDamageCalculation" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MagicalArenaTest" />
         <item itemvalue="Application.MagicalArena" />
+        <item itemvalue="JUnit.MagicalArenaTest.testDamageCalculation" />
       </list>
     </recent_temporary>
   </component>
@@ -51,13 +94,100 @@
       <option name="presentableId" value="Default" />
       <updated>1714805463166</updated>
     </task>
+    <task id="LOCAL-00001" summary="Initial project setup">
+      <option name="closed" value="true" />
+      <created>1714805647165</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1714805647165</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Player class implementation">
+      <option name="closed" value="true" />
+      <created>1714805893972</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1714805893972</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Implentation of Magical Arena logic,Override toString method in Player class to print player attributes">
+      <option name="closed" value="true" />
+      <created>1714806788698</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1714806788698</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Modifications to get clear output&#10;-added name attribute&#10;-welcome message at start of game&#10;-format print statements">
+      <option name="closed" value="true" />
+      <created>1714808059158</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1714808059158</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Added comments">
+      <option name="closed" value="true" />
+      <created>1714808637384</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1714808637384</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Added README">
+      <option name="closed" value="true" />
+      <created>1714810018416</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1714810018416</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Checks&#10;-set health to 0 in case of negative&#10;-return both the players health is &lt;=0">
+      <option name="closed" value="true" />
+      <created>1714811536234</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1714811536234</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Unit tests">
+      <option name="closed" value="true" />
+      <created>1714811572440</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1714811572440</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial project setup" />
+    <MESSAGE value="Player class implementation" />
+    <MESSAGE value="Implentation of Magical Arena logic,Override toString method in Player class to print player attributes" />
+    <MESSAGE value="Modifications to get clear output&#10;-added name attribute&#10;-welcome message at start of game&#10;-format print statements" />
+    <MESSAGE value="Added comments" />
+    <MESSAGE value="Added README" />
+    <MESSAGE value="Checks&#10;-set health to 0 in case of negative&#10;-return both the players health is &lt;=0" />
+    <MESSAGE value="Unit tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Unit tests" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main.java</url>
+          <url>file://$PROJECT_DIR$/src/MagicalArena.java</url>
           <line>13</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
