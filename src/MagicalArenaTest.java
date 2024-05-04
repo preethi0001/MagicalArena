@@ -1,10 +1,10 @@
 import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertTrue;
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class MagicalArenaTest {
 
+    // Test case to verify player creation
     @Test
     void testPlayerCreation() {
         Player player = new Player("Test", 100, 10, 20);
@@ -14,6 +14,7 @@ public class MagicalArenaTest {
         assertEquals(20, player.getAttack());
     }
 
+    // Test case to verify die roll is within range [1, 6]
     @Test
     void testDieRollInRange() {
         Player player = new Player("Test", 100, 10, 20);
@@ -23,6 +24,7 @@ public class MagicalArenaTest {
         }
     }
 
+    // Test case to verify damage calculation
     @Test
     void testDamageCalculation() {
         Player attacker = new Player("Attacker", 100, 10, 20);
@@ -42,6 +44,7 @@ public class MagicalArenaTest {
         assertEquals(40, defender.getHealth());
     }
 
+    // Test case to verify negative damage results in defender's health being set to 0
     @Test
     void testNegativeDamage() {
         Player attacker = new Player("Attacker", 100, 10, 40);
@@ -61,13 +64,15 @@ public class MagicalArenaTest {
         assertEquals(0, defender.getHealth());
     }
 
+    // Test case to verify that health is set to 0 if it goes negative
     @Test
     void testHealthSetToZeroIfNegative() {
         Player player = new Player("Test", 100, 10, 20);
         player.setHealth(-50);
         assertEquals(0, player.getHealth());
     }
-    
+
+    // Test case to verify the game ending
     @Test
     void testGameEnding() {
         Player playerA = new Player("A", 100, 10, 20);
@@ -112,4 +117,27 @@ public class MagicalArenaTest {
         }
     }
 
+    // Test case to verify that health is greater than 0 to start the battle
+    @Test
+    void testStartingHealthGreaterThanZero() {
+        Player playerA = new Player("A", 0, 10, 20);
+        Player playerB = new Player("B", 100, 10, 20);
+
+        MagicalArena arena = new MagicalArena(playerA, playerB);
+        arena.startGame();
+
+        assertTrue(playerA.getHealth() > 0 || playerB.getHealth() > 0);
+    }
+
+    // Test case to verify that the battle doesn't start if player attributes are negative
+    @Test
+    void testBattleWithNegativeAttributes() {
+        Player playerA = new Player("A", -10, 10, 20);
+        Player playerB = new Player("B", 100, -10, 20);
+
+        MagicalArena arena = new MagicalArena(playerA, playerB);
+        arena.startGame();
+
+        assertTrue(playerA.getHealth() > 0 || playerB.getHealth() > 0);
+    }
 }

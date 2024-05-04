@@ -23,6 +23,14 @@ public class MagicalArena {
     // Method to simulate the fight
     public void fight() {
 
+        //ensure all attributes are greater than or equal to 0
+        if(playerA.getHealth() < 0 || playerA.getStrength()< 0 || playerA.getAttack() < 0 ||
+                playerB.getHealth() < 0 || playerB.getStrength()< 0 || playerB.getAttack() < 0) {
+            System.out.println("Cannot start the battle! Attributes of players should be greater than or equal to 0.");
+            return;
+        }
+
+        //check to ensure that both players health is not less than or equal to 0
         if(playerA.getHealth() <= 0 && playerB.getHealth() <= 0) {
             System.out.println("Cannot start the battle! Health of atleast one of the players should be greater than 0.");
             return;
