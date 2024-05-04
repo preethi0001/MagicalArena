@@ -31,4 +31,9 @@ public class Player {
         Random random = new Random();
         return random.nextInt(6) + 1;
     }
+
+    @Override
+    public String toString() {
+        return "Player - Health: " + health + ", Strength: " + strength + ", Attack: " + attack;
+    }
 }
