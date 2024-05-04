@@ -22,6 +22,12 @@ public class MagicalArena {
 
     // Method to simulate the fight
     public void fight() {
+
+        if(playerA.getHealth() <= 0 && playerB.getHealth() <= 0) {
+            System.out.println("Cannot start the battle! Health of atleast one of the players should be greater than 0.");
+            return;
+        }
+
         // Determine who attacks first based on health
         Player attacker = playerA.getHealth() < playerB.getHealth() ? playerA : playerB;
         Player defender = attacker == playerA ? playerB : playerA;
@@ -66,12 +72,16 @@ public class MagicalArena {
         } else {
             System.out.println("Player " + playerA.getName() + " wins!");
         }
+
+        System.out.println("HEALTH OF PLAYERS AT THE END OF BATTLE");
+        System.out.println("PLAYER A: " + playerA.getHealth() + ", PLAYER B: " + playerB.getHealth());
+        System.out.println("What an exhilarating battle in the Magical Arena!");
     }
 
     public static void main(String[] args) {
         // Create two players
-        Player playerA = new Player("A", 100, 5, 10);
-        Player playerB = new Player("B", 50, 10, 5);
+        Player playerA = new Player("A", 10, 5, 10);
+        Player playerB = new Player("B", 0, 10, 5);
 
         // Create a MagicalArena instance and start the game
         MagicalArena arena = new MagicalArena(playerA, playerB);

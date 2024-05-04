@@ -22,7 +22,7 @@ public class Player {
 
     // Setter method to set the health of the player
     public void setHealth(int health) {
-        this.health = health;
+        this.health = Math.max(health, 0);
     }
 
     // Getter method to retrieve the strength of the player
