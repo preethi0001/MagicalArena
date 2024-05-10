@@ -1,10 +1,11 @@
+import java.util.Scanner;
 public class MagicalArena {
-    private Player playerA;
-    private Player playerB;
+    public Player playerA;
+    public Player playerB;
 
-    public MagicalArena(Player playerA, Player playerB) {
-        this.playerA = playerA;
-        this.playerB = playerB;
+    public MagicalArena(Player A, Player B) {
+        playerA = A;
+        playerB = B;
     }
 
     // Method to start the game
@@ -76,20 +77,40 @@ public class MagicalArena {
 
         // Print the winner of the game
         if (playerA.getHealth() <= 0) {
-            System.out.println("Player " + playerB.getName() + " wins!");
+            System.out.println( playerB.getName() + " wins!");
         } else {
-            System.out.println("Player " + playerA.getName() + " wins!");
+            System.out.println( playerA.getName() + " wins!");
         }
 
         System.out.println("HEALTH OF PLAYERS AT THE END OF BATTLE");
-        System.out.println("PLAYER A: " + playerA.getHealth() + ", PLAYER B: " + playerB.getHealth());
+        System.out.println("PLAYER " + playerA.getName() + ": " + playerA.getHealth() + ", PLAYER " + playerB.getName() + ": " + playerB.getHealth());
         System.out.println("What an exhilarating battle in the Magical Arena!");
     }
 
     public static void main(String[] args) {
         // Create two players
-        Player playerA = new Player("A", 10, 5, 10);
-        Player playerB = new Player("B", 0, 10, 5);
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter details of player 1");
+        System.out.println("Enter name of player 1");
+        String name = scanner.next();
+        System.out.println("Enter health of player 1");
+        int health = scanner.nextInt();
+        System.out.println("Enter strength of player 1");
+        int strength = scanner.nextInt();
+        System.out.println("Enter attack power of player 1");
+        int attack = scanner.nextInt();
+
+        System.out.println("Enter details of player 2");
+        System.out.println("Enter name of player 2");
+        String name2 = scanner.next();
+        System.out.println("Enter health of player 2");
+        int health2 = scanner.nextInt();
+        System.out.println("Enter strength of player 2");
+        int strength2 = scanner.nextInt();
+        System.out.println("Enter attack power of player 2");
+        int attack2 = scanner.nextInt();
+        Player playerA = new Player(name, health, strength, attack);
+        Player playerB = new Player(name2, health2, strength2, attack2);
 
         // Create a MagicalArena instance and start the game
         MagicalArena arena = new MagicalArena(playerA, playerB);
