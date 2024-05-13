@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="35b6304f-5e26-4798-a4cf-734162daa4fb" name="Changes" comment="Unit tests">
+    <list default="true" id="35b6304f-5e26-4798-a4cf-734162daa4fb" name="Changes" comment="Enable dynamic input from user">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MagicalArena.iml" beforeDir="false" afterPath="$PROJECT_DIR$/MagicalArena.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MagicalArena.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MagicalArena.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MagicalArenaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MagicalArenaTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,34 +21,50 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <excluded-from-favorite>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="master" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </excluded-from-favorite>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 0
-}]]></component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="2fzYdQZbHTM34MvvfHlDZ7ujJ7K" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "onboarding.tips.debug.path": "C:/Users/A.Guru sai nikhil/OneDrive/Desktop/MagicalArena/src/Main.java"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/A.Guru sai nikhil/OneDrive/Desktop/MagicalArena/src/Main.java&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="JUnit.MagicalArenaTest">
+}</component>
+  <component name="RunManager" selected="Application.MagicalArena">
     <configuration name="MagicalArena" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MagicalArena" />
       <module name="MagicalArena" />
@@ -79,8 +93,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MagicalArenaTest" />
         <item itemvalue="Application.MagicalArena" />
+        <item itemvalue="JUnit.MagicalArenaTest" />
         <item itemvalue="JUnit.MagicalArenaTest.testDamageCalculation" />
       </list>
     </recent_temporary>
@@ -158,15 +172,82 @@
       <option name="project" value="LOCAL" />
       <updated>1714811572440</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Added Unit tests,comments">
+      <option name="closed" value="true" />
+      <created>1714813010862</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1714813010862</updated>
+    </task>
+    <task id="LOCAL-00010" summary="dependencies">
+      <option name="closed" value="true" />
+      <created>1714813251250</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1714813251250</updated>
+    </task>
+    <task id="LOCAL-00011" summary="updated README.md">
+      <option name="closed" value="true" />
+      <created>1714813858398</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1714813858398</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Enable dynamic input from user">
+      <option name="closed" value="true" />
+      <created>1715351514155</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1715351514155</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Enable dynamic input from user">
+      <option name="closed" value="true" />
+      <created>1715351586964</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1715351586964</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="master" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -181,7 +262,11 @@
     <MESSAGE value="Added README" />
     <MESSAGE value="Checks&#10;-set health to 0 in case of negative&#10;-return both the players health is &lt;=0" />
     <MESSAGE value="Unit tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Unit tests" />
+    <MESSAGE value="Added Unit tests,comments" />
+    <MESSAGE value="dependencies" />
+    <MESSAGE value="updated README.md" />
+    <MESSAGE value="Enable dynamic input from user" />
+    <option name="LAST_COMMIT_MESSAGE" value="Enable dynamic input from user" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
